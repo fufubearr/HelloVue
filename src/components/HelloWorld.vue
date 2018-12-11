@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -81,9 +81,18 @@
       </li>
     </ul>
   </div>
+</template>-->
+<template>
+  <div class="hello">
+    <img src="../assets/harden.jpg">
+    <h1>{{ msg }}</h1>
+    <!-- 測試是否載入bootstrap4 -->
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+  </div>
 </template>
 
-<script>
+<!--<script>
 export default {
   name: 'HelloWorld',
   data () {
@@ -92,9 +101,20 @@ export default {
     }
   }
 }
+</script>-->
+<script>
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: '這是首頁，所以 Harden 不動'
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<!--
 <style scoped>
 h1, h2 {
   font-weight: normal;
@@ -110,4 +130,8 @@ li {
 a {
   color: #42b983;
 }
+</style>-->
+
+<style scoped>
+
 </style>
